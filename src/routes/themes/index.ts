@@ -5,7 +5,7 @@ import { checkToken } from '../../helpers/jwt'
 const router = Router()
 
 router.route('/themes/save-theme').post(checkToken, saveTheme)
-router.route('/themes').get(checkToken, getThemes)
+router.route('/themes').get(getThemes)
 router.route('/themes/update-theme/:id').put(checkToken, updateTheme)
 router.route('/themes/delete-theme/:id').delete(checkToken, deleteTheme)
 

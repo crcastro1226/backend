@@ -6,16 +6,13 @@ const schema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'Questions',
     }],
-    name: String,
-    response: String
+    uuid: String
 })
 
 interface ICase extends Document {
     theme_id: string;
-    description: string;
     questions: any;
-    name: string;
-    response: string;
+    uuid: string;
 }
 
 export default model<ICase>('Case', schema)

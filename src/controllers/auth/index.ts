@@ -31,9 +31,7 @@ export const login = async (req: Request, res: Response): Promise<Response> => {
 
             if (result) {
                 user.password = '';
-                const jsontoken = sign({ result: user }, `${SECRET}`, {
-                    expiresIn: "1h",
-                });
+                const jsontoken = sign({ result: user }, `${SECRET}`);
 
                 return res.json({
                     success: true,

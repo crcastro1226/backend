@@ -58,6 +58,7 @@ export const getThemes = async (req: Request, res: Response) => {
         limit,
         page
     };
+    
     try {
         const themes = await Theme.paginate({}, options)
         return res.json(themes)

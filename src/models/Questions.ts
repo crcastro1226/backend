@@ -2,7 +2,6 @@ import { Schema, model, Document } from 'mongoose'
 
 const schema = new Schema({
     question: String,
-    type: String,
     category: String,
     options: [{
         type: Schema.Types.ObjectId,
@@ -12,7 +11,6 @@ const schema = new Schema({
 
 interface IQuestion extends Document {
     question: string;
-    type: string;
     category: string;
     options: any;
 }
