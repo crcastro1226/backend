@@ -11,3 +11,8 @@ https://www.mongodb.com/es
   Y para mongoDB mongo --version
 
 * Luego abres la terminal o consola desde la raíz del proyecto harás npm install para que instalé todas las dependencias necesarias para el backend
+
+* Luego en otra terminal levantas la base de datos con el comando 
+  mongod
+
+* Luego desde la raíz del proyecto ejecutas npm run dev y listo ya el backend está funcionando
